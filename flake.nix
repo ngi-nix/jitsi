@@ -19,12 +19,7 @@
             networking.useDHCP = false;
             networking.firewall.allowedTCPPorts = [ 80 ];
 
-            # Enable a web server.
-            services.httpd = {
-              enable = true;
-              adminAddr = "morty@example.org";
-            };
-          })
+           })
         ];
     };
 
