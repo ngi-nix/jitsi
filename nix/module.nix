@@ -14,7 +14,7 @@ in {
     };
 
     hostName = mkOption {
-      type = types.string;
+      type = types.str;
       description = ''
         The hostname of the server to host Jitsi.
       '';
