@@ -27,7 +27,11 @@ in {
       hostName = cfg.hostName;
     };
 
-    services.jitsi-videobridge.openFirewall = true;
+    services.jitsi-videobridge = {
+      openFirewall = true;
+      apis = [ "colibri" "rest" ];
+    };
+
     networking.firewall.allowedTCPPorts = [ 80 443 ];
   };
 }
